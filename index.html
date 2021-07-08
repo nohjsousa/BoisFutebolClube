@@ -14,8 +14,9 @@
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/elencobotao.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/carrossel.css" rel="stylesheet" />
+        
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -57,46 +58,49 @@
         
         
             <div class="container" id="elenco">
+                
                     
                 
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Elenco</h2>
                     <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
-                
-                <button class="btn btn-primary" text-center data-dismiss="modal" type="button" onclick="Mudarestado('minhaDiv')">
-                    <i class="fas fa-times mr-1"></i>
-                    MASCULINO
+                </div>
+                <button class="btn btn-primary colorboimasculino mb-1" id="flip" data-dismiss="modal" type="button">
+                    <i class=""></i>
+                        MASCULINO
                 </button>
-                <button class="btn btn-primary" text-center data-dismiss="modal" type="button" onclick="Mudarestado('minhaDiv')">
-                    <i class="fas fa-times mr-1"></i>
-                    FEMINO
-                </button>
+
+                <div id="panel">
+                    
+                        <section class="customer-logos slider">
+                            <div class="slide"><img src="assets/img/team/jogadorTeste2_-_Copia.svg"><p class="text-uppercase">murilo</p></div>
+                            <div class="slide"><img src="assets/img/team/1.jpg"><p class="text-uppercase">murilo</p></div>
+                            <div class="slide"><img src="assets/img/team/jogadorTeste2_-_Copia.svg"><p class="text-uppercase">murilo</p></div>
+                            <div class="slide"><img src="assets/img/team/2.jpg"><p class="text-uppercase">murilo</p></div>
+                            <div class="slide"><img src="assets/img/team/jogadorTeste2_-_Copia.svg"><p class="text-uppercase">murilo</p></div>
+                            <div class="slide"><img src="assets/img/team/3.jpg"><p class="text-uppercase">murilo</p></div>
+                            <div class="slide"><img src="assets/img/team/jogadorTeste2_-_Copia.svg"><p class="text-uppercase">murilo</p></div>
+                            <div class="slide"><img src="assets/img/team/1.jpg"><p class="text-uppercase">murilo</p></div>
+                        </section>
+                       
                 
-                <a href="#" class="abrir-modal">Abrir Modal</a>
-		<div class="modal">
-			<div class="modal-img">
-				<img src="castelo.jpg" alt="Lobo Origamid" />
-			</div>
-			<div class="modal-content">
-				<h1>Curso de Web Design</h1>
-				<p>Curso para iniciante e pessoas que pretendem se atualizar. Do design ao código, utilizando HTML5, CSS3, jQuery e com um design responsivo.</p>
-				<a href="#" class="btn">Mais Sobre</a>
-			</div>
-		</div>
-                    
-                    
-                    
-                <div id="minhaDiv">Conteudo
-
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-
-                </div> 
+                
+                
+                
+                
+                
                 </div>
                 
                 
-            
+                <button class="btn btn-primary colorboifeminino" id="flip" data-dismiss="modal" type="button">
+                    <i class=""></i>
+                        FEMININO
+                </button>
 
+                <div id="panel"> informações </div>
+
+                
+                
                 <!--<div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -282,58 +286,8 @@
             </div>
         </section>
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
+       <section class="page-section bg-light" id="team">
             <div class="container">
-                <div class="text-center">
-                    
-                    
-                    <h2 class="section-heading text-uppercase">Diretores Bois F.C</h2>
-                    <h3 class="section-subheading text-muted d-block .d-sm-none">Lorem ipsum dolor sit amet consectetur.</h3>
-                    
-                </div>    
-                <section class="customer-logos slider">
-                        <div class="slide"><img src="assets/img/team/jogadorTeste2_-_Copia.svg">
-                            <p class="text-uppercase text-center"> <strong>Murilo Lopes</strong></p>
-                            <p class="text-muted text-center mt-n4">Diretor Financeiro </p>
-                        </div>
-                        <div class="slide"><img src="assets/img/team/1.jpg">
-                            <p class="text-uppercase text-center"> <strong>Murilo Lopes</strong></p>
-                            <p class="text-muted text-center mt-n4">Diretor Financeiro Masculino</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/team/2.jpg">
-                            <p class="text-uppercase text-center"> <strong>Murilo Lopes</strong></p>
-                            <p class="text-muted text-center mt-n4">Diretor Financeiro Masculino</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/team/3.jpg">
-                            <p class="text-uppercase text-center"> <strong>Murilo Lopes</strong></p>
-                            <p class="text-muted text-center mt-n4">Diretor Financeiro Masculino</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/team/jogadorTeste2_-_Copia.svg">
-                            <p class="text-uppercase text-center"> <strong>Murilo Lopes</strong></p>
-                            <p class="text-muted text-center mt-n4">Diretor Financeiro Masculino</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/team/1.jpg">
-                            <p class="text-uppercase text-center"> <strong>Murilo Lopes</strong></p>
-                            <p class="text-muted text-center mt-n4">Diretor Financeiro Masculino</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/team/2.jpg">
-                            <p class="text-uppercase text-center"> <strong>Murilo Lopes</strong></p>
-                            <p class="text-muted text-center mt-n4">Diretor Financeiro Masculino</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/team/3.jpg">
-                            <p class="text-uppercase text-center"> <strong>Murilo Lopes</strong></p>
-                            <p class="text-muted text-center mt-n4">Diretor Financeiro Masculino</p>
-                        </div>
-                   
-
-                    </section>
-            </div>  
-            
-
-            
-           
-           
-           <!--<div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Diretores do Clube Bois F.C</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
@@ -364,7 +318,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
                 </div>
-            </div>-->
+            </div>
         </section>
         <!-- Clients-->
         <!--<div class="py-5">
@@ -600,9 +554,6 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-         <!-- Animation carrossel Diretoria -->
-        <script src="js/animation.js"></script>
-        
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -611,12 +562,20 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         
-        <!-- efeito dos elencos - Botão -->
-         <script src="jquery/jquery-3.1.1.min.js" type="text/javascript"></script>
-        <!-- Fim-->
         
+         
         <script src="js/scripts.js"></script>
-        <script src="js/carrossel.js"></script>
+        <script src="js/elencoBotao.js"></script>
+        <!--<script src="js/jquery-3.1.1.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script> 
+            $(document).ready(function(){
+              $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+              });
+            });
+        </script>
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </body>
