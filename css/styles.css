@@ -10103,7 +10103,8 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #fff;
+  color: #6a79ce;
+    
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -10212,7 +10213,9 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(254, 209, 54, 0.9);
+  background-color: #212125;
+  background-image: linear-gradient(43deg, #212125 0%, #4158d0 51%, #c850c0 89%, #ffd670 100%);
+  /*background: rgba(254, 209, 54, 0.9);*/
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -10336,9 +10339,11 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  /*border: 7px solid #e9ecef;*/
+  border: 7px solid #b8b1e9;
+      
   border-radius: 100%;
-  background-color: #fed136;
+  /*background-color: #fed136;*/   
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
@@ -10456,6 +10461,7 @@ header.masthead .masthead-heading {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border-color: #b8b1e9;
 }
 .team-member h4 {
   margin-top: 1.5rem;
