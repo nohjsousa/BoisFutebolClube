@@ -1,17 +1,15 @@
 /*------------------------------  elenco Botão -----------------------------------------------*/
-#panel,
-#flip {
-    padding: 5px;
-    width: 100%;
-    text-align: center;
-
+.click-target {
+    cursor: pointer;
 }
 
-#panel {
-    width: 100%;
+.title-content {
+    vertical-align: middle;
+}
+
+.hidden-content {
     display: none;
 }
-
 
 .colorboimasculino {
     background-color: #101011;
@@ -24,10 +22,13 @@
     background-image: linear-gradient(43deg, #6a79ce 0%, #C850C0 28%, #80d0c7 100%);
 
 }
+.colormaster{
+    background-color: #212125;
+background-image: linear-gradient(43deg, #212125 0%, #4158d0 51%, #c850c0 89%, #ffd670 100%);
 
-.teste {
-    background: pink;
+
 }
+
 
 /*------------------------------  fim           -----------------------------------------------*/
 /*------------------------------  elenco Botão -----------------------------------------------*/
@@ -156,4 +157,3 @@
 
 ;
 /*------------------------------  Fim storybutton  -------------------------------------------*/
-

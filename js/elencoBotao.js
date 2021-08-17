@@ -1,19 +1,16 @@
 /*------------------------------  elenco Botão -----------------------------------------------*/
-
-$('.abrir-modal').click(function(){
-	$('.modal').toggleClass('active');
-	var condicao = $('.modal').hasClass('active');
-	if(condicao) {
-		$(this).text('Fechar Modal');
-	} else {
-		$(this).text('Abrir Modal');
-	}
+$(document).ready(function () {
+    $(".click-target").click(function () {
+        $(this).parent().next(".hidden-content").slideToggle("slow");
+    });
 });
+
+
 /*------------------------------  fim ------------------------------------------------------*/
 
 /*------------------------  carrossel infinito -----------------------------------------------*/
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.customer-logos').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
