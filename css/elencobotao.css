@@ -22,14 +22,135 @@
     background-image: linear-gradient(43deg, #6a79ce 0%, #C850C0 28%, #80d0c7 100%);
 
 }
-.colormaster{
+
+.colormaster {
     background-color: #212125;
-background-image: linear-gradient(43deg, #212125 0%, #4158d0 51%, #c850c0 89%, #ffd670 100%);
+    background-image: linear-gradient(43deg, #212125 0%, #4158d0 51%, #c850c0 89%, #ffd670 100%);
+
+}
+
+.acaoSocialParallax {
+    background-color: #10262d;
+background-image: linear-gradient(160deg, #10262d 0%, #2a2d57 100%);
 
 }
 
 
 /*------------------------------  fim           -----------------------------------------------*/
+
+/*------------------------------  Parallax      -----------------------------------------------*/
+.acaoSocialParallax {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+}
+
+.acaoSocialParallax section {
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.acaoSocialParallax section:nth-child(1) .image {
+    background-image: url(https://images.unsplash.com/photo-1463412855783-af97e375664b?iq=100&fm=jpg&w=1000);
+}
+
+.acaoSocialParallax section:nth-child(2) .image {
+    background-image: url(https://images.unsplash.com/photo-1462819067004-905a72ea3996?iq=100&fm=jpg&w=1000);
+}
+
+.acaoSocialParallax section:nth-child(3) .image {
+    background-image: url(https://images.unsplash.com/photo-1461770354136-8f58567b617a?iq=100&fm=jpg&w=1000);
+}
+
+.acaoSocialParallax section:nth-child(4) .image {
+    background-image: url(https://images.unsplash.com/photo-1461080639469-66d73688fb21?iq=100&fm=jpg&w=1000);
+}
+
+.acaoSocialParallax section:nth-child(5) .image {
+    background-image: url(https://images.unsplash.com/photo-1460804198264-011ca89eaa43?iq=100&fm=jpg&w=1000);
+}
+
+.acaoSocialParallax section:nth-child(6) .image {
+    background-image: url("../assets/img/team/time1.jpg");
+}
+
+.acaoSocialParallax section .image {
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    opacity: 0.4;
+}
+
+.acaoSocialParallax section .stuff {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    max-width: 70%;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000;
+    color: #e67e22;
+    margin: 0 auto;
+    font-size: 26px;
+    position: relative;
+}
+
+.acaoSocialParallax section .stuff h2 {
+    margin: 0px;
+}
+
+.acaoSocialParallax section .stuff:before,
+.acaoSocialParallax section .stuff:after {
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #d35400;
+    content: "";
+    margin: 30px 0;
+}
+
+.at-twitter {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #f1c40f;
+    z-index: 5000;
+}
+
+.at-twitter:visited {
+    color: #f1c40f;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/*------------------------------  Parallaxfim          ---------------------------------------*/
+
 /*------------------------------  elenco Botão -----------------------------------------------*/
 
 /* Slider */
