@@ -47,7 +47,7 @@
     <!-- Masthead -->
     <header class="masthead" id="img">
         <div class="container">
-            <div class="masthead-subheading">Bois Futebol Clube</div>
+            <h1 class="masthead-subheading">Bois Futebol Clube</h1>
             <div class="masthead-heading text-uppercase d-none d-lg-block d-print-block">Mais que um time, uma família</div>
             <!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>-->
         </div>
@@ -55,7 +55,7 @@
     <!-- Projetos -->
     <!--<img class="img-fluid mt-2 mb-4"  src="assets/img/protesto/testeo.png" alt="" />-->
 <!-- Projetos -->
-    <section class="page-section" id="projeto">
+    <div class="mt-5" id="projeto">
         <div class="container text-center">
             <hr class="featurette-dividir storybutton mx-5">
             <!-- Three columns of text below the carousel -->
@@ -301,7 +301,7 @@
                     </div>
                 </form>-->
         </div>
-    </section>
+    </div>
 
 <!-- Elenco -->
     <div class="diretoria" id="elenco">
@@ -316,31 +316,31 @@
             <div class="hidden-content">
                 <div class="customer-logos slider">
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/murillo.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">murilo</p>
                     </div>
 
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/jhon.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">John</p>
                     </div>
 
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/jhones.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Jhones</p>
                     </div>
 
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/camila.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Camila</p>
                     </div>
 
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/Iago.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Iago</p>
                     </div>
 
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/Karla.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Karla</p>
                     </div>
 
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/kaue.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Kauê</p>
                     </div>
                 </div>
             </div>
@@ -350,25 +350,25 @@
             <div class="hidden-content">
                 <div class="customer-logos slider">
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/Karla.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Karla</p>
                     </div>
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/kaue.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Kauê</p>
                     </div>
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/Iago.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Iago</p>
                     </div>
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/camila.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Camila</p>
                     </div>
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/jhon.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">John</p>
                     </div>
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/jhones.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Jhones</p>
                     </div>
                     <div class="slide"><img class="rounded-circle" src="assets/img/team/murillo.jpg">
-                        <p class="text-uppercase">murilo</p>
+                        <p class="text-white">Murilo</p>
                     </div>
                 </div>
             </div>
@@ -489,7 +489,7 @@
             </div>
             <div class="customer-logos slider mt-5 text-center">
                 <div class="slide"><img class="rounded-circle" src="assets/img/team/murillo.jpg" alt="">
-                    <h6 class="mt-3 mb-n1 text-muted">Murilo</h6>
+                    <h6 class="text-muted mt-3 mb-n1">Murilo</h6>
                     <p class="text-muted">M. Financeiro</p>
                 </div>
                 <div class="slide"><img class="rounded-circle" src="assets/img/team/iago.jpg" alt="">
@@ -539,7 +539,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p class="large text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                 </div>
             </div>
         </div>
@@ -788,6 +788,28 @@
                 $("#panel").slideToggle("slow");
             });
         });
+    </script>
+<!-- Efeito Máquina de escrever-->
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 85 * i);
+            });
+        }
+
+        // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
+        // function typeWriter(elemento) {
+        //   const textoArray = elemento.innerHTML.split('');
+        //   elemento.innerHTML = '';
+        //   for(let i = 0; i < textoArray.length; i++) {
+        //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
+        //   }
+        // }
+
+        const titulo = document.querySelector('h1');
+        typeWriter(titulo);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
