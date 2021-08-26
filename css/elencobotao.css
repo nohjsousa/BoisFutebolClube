@@ -33,6 +33,15 @@
     background-color: #000;
 }
 
+.diretoria {
+    background-color: #011a3a;
+    background-image: linear-gradient(0deg, #011a3a 0%, #0b2c5b 59%, #0b41cc 100%);
+}
+.teste {
+    background-color: #011a3a;
+background-image: linear-gradient(160deg, #011a3a 0%, #011a3a 100%);
+
+}
 
 /*------------------------------  fim           -----------------------------------------------*/
 
