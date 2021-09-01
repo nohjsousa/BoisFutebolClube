@@ -45,7 +45,73 @@ background-image: linear-gradient(160deg, #011a3a 0%, #011a3a 100%);
 
 /*------------------------------  fim           -----------------------------------------------*/
 
-/*------------------------------  Parallax      -----------------------------------------------*/
+/*------------------------------  Parallax ação Social     -----------------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.spacer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrolling__inner {
+    max-width: 25em;
+    padding: 3em;
+    background-color: #fff;
+    box-shadow: 0 12px 20px -6px rgba(0, 0, 0, .3);
+}
+
+.sticky-section {
+    z-index: 1;
+    position: relative;
+}
+
+.sticky-image {
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    display: block;
+    background-position: center;
+}
+
+[data-attachment="fixed"] {
+    background-attachment: fixed;
+}
+
+.scrolling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 100vh;
+}
+
+.scrolling[data-pin] {
+    position: sticky;
+    min-height: 100vh;
+    padding-bottom: 0;
+}
+
+.scrolling[data-pin="top"] {
+    top: 0;
+}
+
+.scrolling[data-pin="bottom"] {
+    bottom: 0;
+}
+
+/*--------------- Parallax Antigo
 .acaoSocialParallax {
     display: flex;
     align-content: center;
@@ -155,7 +221,7 @@ a:focus {
     color: inherit;
     text-decoration: underline;
 }
-
+ Parallax Antigo -----------------------------------------------------------------------------*/
 /*------------------------------  Parallaxfim          ---------------------------------------*/
 
 /*------------------------------  elenco Botão -----------------------------------------------*/
